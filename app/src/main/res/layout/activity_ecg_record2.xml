@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EcgRecord2">
+
+    <ImageView
+        android:id="@+id/ecg_graph"
+        android:layout_width="600dp"
+        android:layout_height="250dp"
+        android:background="#000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.144" />
+
+    <Button
+        android:id="@+id/start_ecg"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="Start"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/ecg_graph"
+        app:layout_constraintTop_toBottomOf="@+id/ecg_graph"
+        android:background="@drawable/primary_button"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10 seconds left"
+        android:id="@+id/time_left_tv"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/start_ecg"
+        app:layout_constraintStart_toEndOf="@+id/restart_ecg"
+        app:layout_constraintTop_toBottomOf="@+id/ecg_graph"/>
+
+    <Button
+        android:id="@+id/restart_ecg"
+        android:layout_width="170dp"
+        android:layout_height="wrap_content"
+        android:text="Start Again"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/ecg_graph"
+        app:layout_constraintTop_toBottomOf="@+id/ecg_graph"
+        android:enabled="false"
+        android:background="@drawable/primary_button"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

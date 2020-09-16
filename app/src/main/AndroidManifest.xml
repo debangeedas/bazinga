@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.covidtest">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
+        <activity android:name=".DiabetesTest3" />
+        <activity android:name=".CovidTest3" />
+        <activity android:name=".DiabetesTest2" />
+        <activity android:name=".CovidTest2" />
+        <activity
+            android:name=".EcgRecord3"
+            android:screenOrientation="landscape" />
+        <activity
+            android:name=".EcgRecord2"
+            android:screenOrientation="landscape" />
+        <activity android:name=".EcgRecord1" />
+        <activity android:name=".DiabetesTest1" />
+        <activity android:name=".DiabetesInstruction3" />
+        <activity android:name=".DiabetesInstruction2" />
+        <activity android:name=".EcgInstruction3" />
+        <activity android:name=".EcgInstruction2" />
+        <activity android:name=".DiabetesInstruction1" />
+        <activity android:name=".EcgInstruction1" />
+        <activity android:name=".CovidTest1" />
+        <activity android:name=".CovidInstruction3" />
+        <activity android:name=".CovidInstruction2" />
+        <activity android:name=".CovidInstruction1" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".MobileLoginActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".OnboardingActivity" />
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+                <category android:name="android.intent.category.LAUNCHER" />
+
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+    </application>
+
+</manifest>

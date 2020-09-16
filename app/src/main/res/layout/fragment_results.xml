@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/covid_1"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/results_card" />
+
+    <ImageView
+        android:id="@+id/covid_2"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="@+id/covid_1"
+        app:layout_constraintStart_toStartOf="@+id/covid_1"
+        app:layout_constraintTop_toBottomOf="@+id/covid_1"
+        app:srcCompat="@drawable/results_card_2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="COVID Tests"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/covid_1"
+        app:layout_constraintEnd_toEndOf="@+id/covid_1"
+        app:layout_constraintStart_toStartOf="@+id/covid_1"
+        app:layout_constraintTop_toTopOf="@+id/covid_1"
+        app:layout_constraintVertical_bias="0.777" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click here to view results"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/covid_2"
+        app:layout_constraintEnd_toEndOf="@+id/covid_2"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/covid_2"
+        app:layout_constraintTop_toTopOf="@+id/covid_2"
+        app:layout_constraintVertical_bias="0.473" />
+
+    <ImageView
+        android:id="@+id/ecg_1"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/covid_2"
+        app:srcCompat="@drawable/results_card" />
+
+    <ImageView
+        android:id="@+id/ecg_2"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="@+id/ecg_1"
+        app:layout_constraintStart_toStartOf="@+id/ecg_1"
+        app:layout_constraintTop_toBottomOf="@+id/ecg_1"
+        app:srcCompat="@drawable/results_card_2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ECG Measurements"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ecg_1"
+        app:layout_constraintEnd_toEndOf="@+id/ecg_1"
+        app:layout_constraintStart_toStartOf="@+id/ecg_1"
+        app:layout_constraintTop_toTopOf="@+id/ecg_1"
+        app:layout_constraintVertical_bias="0.777" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click here to view results"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/ecg_2"
+        app:layout_constraintEnd_toEndOf="@+id/ecg_2"
+        app:layout_constraintStart_toStartOf="@+id/ecg_2"
+        app:layout_constraintTop_toTopOf="@+id/ecg_2"
+        app:layout_constraintVertical_bias="0.473" />
+
+    <ImageView
+        android:id="@+id/diabetes_1"
+        android:layout_width="300dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="28dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/ecg_2"
+        app:srcCompat="@drawable/results_card" />
+
+    <ImageView
+        android:id="@+id/diabetes_2"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toEndOf="@+id/diabetes_1"
+        app:layout_constraintStart_toStartOf="@+id/diabetes_1"
+        app:layout_constraintTop_toBottomOf="@+id/diabetes_1"
+        app:srcCompat="@drawable/results_card_2" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diabetes Tests"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="@+id/diabetes_1"
+        app:layout_constraintEnd_toEndOf="@+id/diabetes_1"
+        app:layout_constraintStart_toStartOf="@+id/diabetes_1"
+        app:layout_constraintTop_toTopOf="@+id/diabetes_1"
+        app:layout_constraintVertical_bias="0.777" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click here to view results"
+        android:textColor="@color/colorAccent"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/diabetes_2"
+        app:layout_constraintEnd_toEndOf="@+id/diabetes_2"
+        app:layout_constraintStart_toStartOf="@+id/diabetes_2"
+        app:layout_constraintTop_toTopOf="@+id/diabetes_2"
+        app:layout_constraintVertical_bias="0.473" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
