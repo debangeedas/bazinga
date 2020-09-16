@@ -32,4 +32,7 @@ public class CovidInstruction3 extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onBackPressed() {}
 }

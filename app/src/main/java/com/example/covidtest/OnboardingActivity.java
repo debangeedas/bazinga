@@ -53,6 +53,7 @@ public class OnboardingActivity extends AppCompatActivity {
                     onboardingViewpager.setCurrentItem(onboardingViewpager.getCurrentItem()+1);
                 } else {
                     startActivity(new Intent(getApplicationContext(), LoginActivity.class));
+
                     finish();
                 }
             }
@@ -136,4 +137,7 @@ public class OnboardingActivity extends AppCompatActivity {
             finish();
         }
     }
+
+    @Override
+    public void onBackPressed() {}
 }

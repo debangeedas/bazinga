@@ -103,7 +103,7 @@ public class CovidTest2 extends AppCompatActivity {
     }
 
     public void connectServer() {
-        String postUrl = "http://192.168.0.7:5000/";
+        String postUrl = "https://stri--p.herokuapp.com/";
 
         MultipartBody.Builder multipartBodyBuilder;
         multipartBodyBuilder = new MultipartBody.Builder().setType(MultipartBody.FORM);
@@ -157,6 +157,7 @@ public class CovidTest2 extends AppCompatActivity {
                     @Override
                     public void run() {
                         try {
+
                             str = response.body().string();
                             Log.e("Server's Response: ", str);
 
@@ -174,5 +175,8 @@ public class CovidTest2 extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onBackPressed() {}
 
 }

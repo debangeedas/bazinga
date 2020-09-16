@@ -32,4 +32,7 @@ public class EcgInstruction3 extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onBackPressed() {}
 }

@@ -32,4 +32,7 @@ public class DiabetesInstruction3 extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onBackPressed() {}
 }

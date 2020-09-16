@@ -71,4 +71,5 @@ public class EcgRecord2 extends AppCompatActivity {
         long seconds = timeLeft/1000;
         countdown.setText(seconds + " seconds left");
     }
+
 }

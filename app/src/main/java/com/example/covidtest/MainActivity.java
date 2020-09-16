@@ -192,4 +192,7 @@ public class MainActivity extends AppCompatActivity {
 //                }, Looper.getMainLooper());
 //
 //    }
+
+    @Override
+    public void onBackPressed() {}
 }

@@ -62,4 +62,6 @@ public class CovidTest3 extends AppCompatActivity {
             }
         }
     }
+    @Override
+    public void onBackPressed() {}
 }

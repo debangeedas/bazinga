@@ -137,4 +137,7 @@ public class MobileLoginActivity extends AppCompatActivity {
         });
     }
 
+    @Override
+    public void onBackPressed() {}
+
 }

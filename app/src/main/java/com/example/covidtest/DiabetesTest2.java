@@ -57,4 +57,7 @@ public class DiabetesTest2 extends AppCompatActivity {
         captureView.setPadding(0,0,0,0);
         captureView.setScaleType(ImageView.ScaleType.CENTER_CROP);
     }
+
+    @Override
+    public void onBackPressed() {}
 }

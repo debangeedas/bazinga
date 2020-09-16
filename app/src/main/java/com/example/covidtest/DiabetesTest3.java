@@ -22,4 +22,7 @@ public class DiabetesTest3 extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onBackPressed() {}
 }

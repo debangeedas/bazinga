@@ -36,4 +36,7 @@ public class EcgRecord3 extends AppCompatActivity {
             }
         });
     }
+
+    @Override
+    public void onBackPressed() {}
 }
