@@ -22,8 +22,8 @@ public class CovidTest3 extends AppCompatActivity {
         setContentView(R.layout.activity_covid_test3);
 
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
-//        String s = sharedPreferences.getString("response", "-");
-//        Log.e("Response : ", s);
+        String s = sharedPreferences.getString("response", "-");
+        Log.e("Response : ", s);
 
         covid = findViewById(R.id.covidTextView);
         sub = findViewById(R.id.subTextView);
@@ -39,7 +39,7 @@ public class CovidTest3 extends AppCompatActivity {
                 }
             }
         });
-        analyseResult("101");
+        analyseResult(s);
     }
 
     private void analyseResult(String s) {
