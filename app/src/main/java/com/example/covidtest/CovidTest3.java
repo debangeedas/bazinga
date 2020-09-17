@@ -43,17 +43,23 @@ public class CovidTest3 extends AppCompatActivity {
     }
 
     private void analyseResult(String s) {
-        if (s.equals("2") || s.charAt(0) == '0') {
+        if (s.equals("3")) {
+            backToHome.setText("An error has occured.");
+            sub.setText("Invalid results obtained");
+        } else if (s.equals("2") ) {
             backToHome.setText("Try Again");
             sub.setText("Invalid results obtained");
+        } else if (s.charAt(0) == '0') {
+            backToHome.setText("Try Again");
+            sub.setText("Wrong strip configuration. Please insert the strip properly.");
         } else if (s.charAt(0) == '1'){
             if (s.charAt(1) == '0' && s.charAt(2) == '0') {
                 covid.setText("COVID Negative");
                 sub.setText("Only the control line is visible.");
-            } else if (s.charAt(1) == '0' && s.charAt(2) == '1') {
+            } else if (s.charAt(1) == '1' && s.charAt(2) == '0') {
                 covid.setText("COVID Positive");
                 sub.setText("IgG Positive");
-            } else if (s.charAt(1) == '1' && s.charAt(2) == '0') {
+            } else if (s.charAt(1) == '0' && s.charAt(2) == '1') {
                 covid.setText("COVID Positive");
                 sub.setText("IgM Positive");
             } else if (s.charAt(1) == '1' && s.charAt(2) == '1') {
