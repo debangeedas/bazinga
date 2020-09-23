@@ -9,18 +9,17 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:layout_marginBottom="510dp"
+        android:layout_height="280dp"
+        android:layout_marginBottom="480dp"
         android:src="@drawable/primary_button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageView
         android:id="@+id/imageView4"
-        android:layout_width="100dp"
-        android:layout_height="30dp"
+        android:layout_width="110dp"
+        android:layout_height="40dp"
         app:layout_constraintBottom_toBottomOf="@+id/imageView"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.096"
@@ -31,10 +30,10 @@
 
     <ImageView
         android:id="@+id/covid_test_button"
-        android:layout_width="80dp"
-        android:layout_height="110dp"
-        android:layout_marginStart="28dp"
-        android:layout_marginLeft="28dp"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_marginStart="18dp"
+        android:layout_marginLeft="18dp"
         android:layout_marginTop="8dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/imageView4"
@@ -42,8 +41,8 @@
 
     <ImageView
         android:id="@+id/record_ecg_button"
-        android:layout_width="80dp"
-        android:layout_height="110dp"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
         app:layout_constraintBottom_toBottomOf="@+id/covid_test_button"
         app:layout_constraintEnd_toStartOf="@+id/diabetes_test_button"
         app:layout_constraintStart_toEndOf="@+id/covid_test_button"
@@ -53,13 +52,65 @@
 
     <ImageView
         android:id="@+id/diabetes_test_button"
-        android:layout_width="80dp"
-        android:layout_height="110dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginRight="28dp"
+        android:layout_width="100dp"
+        android:layout_height="130dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginRight="18dp"
         app:layout_constraintBottom_toBottomOf="@+id/record_ecg_button"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/record_ecg_button"
         app:srcCompat="@drawable/diabetes_test_cropped" />
+
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Latest Updates in Medicine"
+            android:textStyle="bold"
+            android:layout_marginBottom="8dp"
+            android:layout_marginTop="12dp"
+            android:textSize="18sp"
+            android:fontFamily="@font/poppins_medium"
+            android:textColor="#000000"
+            android:layout_marginStart="12dp"
+            android:layout_marginLeft="12dp"/>
+
+        <ImageView
+            android:id="@+id/refresh"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:src="@drawable/ic_baseline_refresh_24"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:layout_marginEnd="8dp" />
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rl" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rl" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -14,14 +14,6 @@
         android:layout_marginTop="12dp"
         android:src="@drawable/exit_button" />
 
-<!--    <ImageView-->
-<!--        android:layout_width="262dp"-->
-<!--        android:layout_height="231dp"-->
-<!--        android:layout_gravity="center_horizontal"-->
-<!--        android:layout_marginTop="100dp"-->
-<!--        android:layout_marginBottom="36dp"-->
-<!--        android:src="@mipmap/ic_launcher" />-->
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -29,17 +21,9 @@
         android:gravity="center_horizontal"
         android:layout_marginTop="220dp"
         android:text="Please insert some saliva in the mouthpiece and wait for two minutes."
-        android:textSize="24sp"
+        android:textSize="22sp"
+        android:fontFamily="@font/poppins_medium"
         android:textStyle="bold" />
-
-<!--    <TextView-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content"-->
-<!--        android:layout_marginHorizontal="40dp"-->
-<!--        android:layout_marginTop="4dp"-->
-<!--        android:gravity="center_horizontal"-->
-<!--        android:text="TextView"-->
-<!--        android:textSize="16sp" />-->
 
     <Button
         android:id="@+id/next_button"
@@ -47,6 +31,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="64dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="18sp"
         android:background="@drawable/primary_button"
         android:text="Next"
         android:textAllCaps="false" />

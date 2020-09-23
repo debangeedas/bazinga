@@ -71,7 +71,7 @@ public class CovidTest2 extends AppCompatActivity {
                     if (capture.getText() == "Save and Proceed") {
                         connectServer();
                         intent = new Intent(getApplicationContext(), CovidTest3.class);
-//                        startActivity(intent);
+                        startActivity(intent);
                     } else {
                         startActivityForResult(new Intent(MediaStore.ACTION_IMAGE_CAPTURE), 0);
                         //TODO: handle flashlight

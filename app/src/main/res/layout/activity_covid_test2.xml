@@ -25,6 +25,7 @@
         android:background="@drawable/primary_button"
         android:text="Capture"
         android:textAllCaps="false"
+        android:fontFamily="@font/poppins_medium"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/cameraView"
         app:layout_constraintTop_toBottomOf="@+id/cameraView" />
@@ -35,6 +36,7 @@
         android:layout_height="wrap_content"
         android:background="@drawable/primary_button"
         android:text="Try Again"
+        android:fontFamily="@font/poppins_medium"
         android:textAllCaps="false"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/cameraView"

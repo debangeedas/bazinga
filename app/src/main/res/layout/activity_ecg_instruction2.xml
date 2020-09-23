@@ -14,38 +14,37 @@
         android:layout_marginTop="12dp"
         android:src="@drawable/exit_button" />
 
-    <ImageView
-        android:layout_width="262dp"
-        android:layout_height="231dp"
-        android:layout_gravity="center_horizontal"
-        android:layout_marginTop="100dp"
-        android:layout_marginBottom="36dp"
-        android:src="@mipmap/ic_launcher" />
-
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="40dp"
         android:gravity="center_horizontal"
-        android:text="TextView"
-        android:textSize="24sp"
+        android:layout_marginTop="170dp"
+        android:text="Turn on Bluetooth and connect the hardware to your smartphone."
+        android:textSize="22sp"
+        android:fontFamily="@font/poppins_medium"
         android:textStyle="bold" />
 
-    <TextView
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/connect_hw"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginHorizontal="40dp"
-        android:layout_marginTop="4dp"
-        android:gravity="center_horizontal"
-        android:text="TextView"
-        android:textSize="16sp" />
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="100dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="18sp"
+        android:background="@drawable/primary_button"
+        android:text="Connect to Hardware"
+        android:textAllCaps="false" />
 
     <Button
         android:id="@+id/next_button"
         android:layout_width="200dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="54dp"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/poppins_medium"
+        android:textSize="18sp"
         android:background="@drawable/primary_button"
         android:text="Next"
         android:textAllCaps="false" />

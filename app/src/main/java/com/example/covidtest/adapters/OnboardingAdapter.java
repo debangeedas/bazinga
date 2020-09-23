@@ -1,4 +1,4 @@
-package com.example.covidtest;
+package com.example.covidtest.adapters;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -8,6 +8,9 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.example.covidtest.OnboardingItem;
+import com.example.covidtest.R;
 
 import java.util.List;
 

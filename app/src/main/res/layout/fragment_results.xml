@@ -32,6 +32,7 @@
         android:textColor="#FFFFFF"
         android:textStyle="bold"
         android:textSize="24sp"
+        android:fontFamily="@font/poppins_medium"
         app:layout_constraintBottom_toBottomOf="@+id/covid_1"
         app:layout_constraintEnd_toEndOf="@+id/covid_1"
         app:layout_constraintStart_toStartOf="@+id/covid_1"
@@ -39,8 +40,10 @@
         app:layout_constraintVertical_bias="0.777" />
 
     <TextView
+        android:id="@+id/covidData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
         android:text="Click here to view results"
         android:textColor="@color/colorAccent"
         android:textSize="16sp"
@@ -77,6 +80,7 @@
         android:textColor="#FFFFFF"
         android:textStyle="bold"
         android:textSize="24sp"
+        android:fontFamily="@font/poppins_medium"
         app:layout_constraintBottom_toBottomOf="@+id/ecg_1"
         app:layout_constraintEnd_toEndOf="@+id/ecg_1"
         app:layout_constraintStart_toStartOf="@+id/ecg_1"
@@ -84,8 +88,10 @@
         app:layout_constraintVertical_bias="0.777" />
 
     <TextView
+        android:id="@+id/ecgData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
         android:text="Click here to view results"
         android:textColor="@color/colorAccent"
         android:textSize="16sp"
@@ -121,6 +127,7 @@
         android:textColor="#FFFFFF"
         android:textStyle="bold"
         android:textSize="24sp"
+        android:fontFamily="@font/poppins_medium"
         app:layout_constraintBottom_toBottomOf="@+id/diabetes_1"
         app:layout_constraintEnd_toEndOf="@+id/diabetes_1"
         app:layout_constraintStart_toStartOf="@+id/diabetes_1"
@@ -128,8 +135,10 @@
         app:layout_constraintVertical_bias="0.777" />
 
     <TextView
+        android:id="@+id/diabetesData"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
         android:text="Click here to view results"
         android:textColor="@color/colorAccent"
         android:textSize="16sp"
