@@ -32,7 +32,7 @@ public class DiabetesTest3 extends AppCompatActivity {
         setContentView(R.layout.activity_diabetes_test3);
 
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
-        String s = sharedPreferences.getString("diabetesResponse", "-");
+        String s = sharedPreferences.getString("diabetesResponse", "130");
         Log.e("Response : ", s);
 
         mDbHelper = new TestDbHelper(this);
@@ -50,6 +50,7 @@ public class DiabetesTest3 extends AppCompatActivity {
                     insertDiabetesTestResult();
                     startActivity(new Intent(getApplicationContext(), HomeActivity.class));
                 }
+                finish();
             }
         });
         analyseResult(s);

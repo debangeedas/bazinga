@@ -28,19 +28,5 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     @Override
-    protected void onResume() {
-        super.onResume();
-        SharedPreferences sharedpreferences = getSharedPreferences(getString(R.string.app_name), Context.MODE_PRIVATE);
-        if (!sharedpreferences.getBoolean("loggedIn", false)) {
-            SharedPreferences.Editor editor = sharedpreferences.edit();
-            editor.putBoolean("loggedIn", Boolean.TRUE);
-            editor.apply();
-        } else {
-            startActivity(new Intent(getApplicationContext(), MainActivity.class));
-            finish();
-        }
-    }
-
-    @Override
     public void onBackPressed() {}
 }
